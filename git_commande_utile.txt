@@ -1,0 +1,8 @@
+Creer un repo sur github à partir de zero
+
+git init
+git add docker_commande_utile.txt 
+git commit -m 'premier commit'
+git branch -M main
+git remote add origin https://{token_du_compte_github}@github.com/{identifiant_github}/{nom_du_repo}.git
+git push -u origin main
