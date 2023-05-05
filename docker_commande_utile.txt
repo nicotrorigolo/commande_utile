@@ -1,1 +1,22 @@
-lapin
+Se connecter au repo docker
+docker login {url_du_repo_docker}
+
+Se connecter au repo docker sans taper l'identifiant et le mot de passe
+docker login {url_du_repo_docker} -u {cas} -p {mdp}
+
+Pousser une image
+docker tag {nom_image} {url_du_repo_docker}/{{nom_dossier}}/{{nom_image}}
+docker push {url_du_repo_docker}/{{nom_dossier}}/{{nom_image}}
+
+commande pour vider le cache :
+docker system prune -a
+
+commande pour lancer un container et rentrer dedans
+docker run -it {nom_du_container} bash
+
+commande pour lancer un container rentrer dedans et partager des fichiers
+docker run -v ${WORKSPACE}:/robots -it {nom_du_container} bash
+
+commande pour lancer un container rentrer dedans et partager des fichiers et mettre des variables d'environnement dans le container
+docker run -v {chemin_dossier_en_local_a_partage}:{chemin_du_dossier_dans_le_container} -e {nom_de_la_variable}={valeur_de_la_variable} -it {nom_du_container} bash
+
