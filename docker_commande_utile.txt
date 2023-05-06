@@ -1,3 +1,8 @@
+Information docker réseau
+Les container sont en utilisant le network docker0
+L'adresse IP de la gateway docker0 peut être trouvé avec la commande "ifconfig"
+L'adresse IP du docker0 est en génréral : 172.17.0.1
+
 Se connecter au repo docker
 docker login {url_du_repo_docker}
 
