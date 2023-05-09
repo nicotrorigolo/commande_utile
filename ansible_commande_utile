@@ -1,5 +1,8 @@
 Verifier la connexion sur un serveur en rentrant le mot de passe ssh a la main (si ça marche pas, il y a un probleme dans la connexion ssh)
-ansible -i "{adresse ip du serveur}," all -u {username du compte qui est dans le serveur} -k -m ping
+ansible -i "{adresse_ip_du_serveur}," all -u {username_du_compte_qui_est_dans_le_serveur} -k -m ping
 
 Verifier la connexion sur un serveur sans rentrer le mot de passe ssh a la main (si ça marche pas, il y a un probleme dans la connexion ssh)
-ansible -i "{adresse ip du serveur}," all -u {username du compte qui est dans le serveur} -m ping
+ansible -i "{adresse_ip_du_serveur}," all -u {username_du_compte_qui_est_dans_le_serveur} -m ping
+
+Verifier la connexion sur un serveur sans rentrer le mot de passe ssh a la main, mais indiquer le mot de passe dans la ligne de commande
+sshpass -p '{mot_de_passe_du_username}' ansible -i "{adresse_ip_du_serveur}," all -u {username_du_compte_qui_est_dans_le_serveur} -k -m ping
