@@ -9,3 +9,9 @@ sshpass -p '{mot_de_passe_du_username}' ansible -i "{adresse_ip_du_serveur}," al
 
 Afficher l'arborescence de l'inventory avec les variables:
 ansible-inventory -i 00_inventory.yml --graph --vars
+
+Faire des actions dans un serveurs
+ansible -i "{adresse_ip_du_serveur}," all -u {username_du_compte_qui_est_dans_le_serveur} -m shell -a "{commande_a_executer}"
+
+Faire des installations dans un serveurs
+ansible -i "{adresse_ip_du_serveur}," all -u username_du_compte_qui_est_dans_le_serveur} -b -K -m raw -a "apt install -y {pack_a_installer}"
