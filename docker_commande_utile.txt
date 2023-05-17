@@ -9,6 +9,9 @@ docker login {url_du_repo_docker}
 Se connecter au repo docker sans taper l'identifiant et le mot de passe
 docker login {url_du_repo_docker} -u {cas} -p {mdp}
 
+Se connecter au repo docker sans taper l'identifiant et le mot de passe mais avec token
+docker login {url_du_repo_docker} -u {cas} -p {token}
+
 Pousser une image
 docker tag {nom_image} {url_du_repo_docker}/{{nom_dossier}}/{{nom_image}}
 docker push {url_du_repo_docker}/{{nom_dossier}}/{{nom_image}}
