@@ -18,3 +18,6 @@ ansible -i "{adresse_ip_du_serveur}," all -u {username_du_compte_qui_est_dans_le
 
 Faire des installations dans un serveurs
 ansible -i "{adresse_ip_du_serveur}," all -u username_du_compte_qui_est_dans_le_serveur} -b -K -m raw -a "apt install -y {pack_a_installer}"
+
+Lancer le playbook avec l'inventory
+ansible-playbook -i 00_inventory.yml playbook.yml
