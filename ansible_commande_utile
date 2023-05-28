@@ -21,3 +21,6 @@ ansible -i "{adresse_ip_du_serveur}," all -u username_du_compte_qui_est_dans_le_
 
 Lancer le playbook avec l'inventory
 ansible-playbook -i 00_inventory.yml playbook.yml
+
+Creer un role
+ansible-galaxy init {nom_du_role}
