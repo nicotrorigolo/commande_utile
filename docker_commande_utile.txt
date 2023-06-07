@@ -7,10 +7,10 @@ Se connecter au repo docker
 docker login {url_du_repo_docker}
 
 Se connecter au repo docker sans taper l'identifiant et le mot de passe
-docker login {url_du_repo_docker} -u {cas} -p {mdp}
+docker login {url_du_repo_docker} -u {user} -p {mdp}
 
 Se connecter au repo docker sans taper l'identifiant et le mot de passe mais avec token
-docker login {url_du_repo_docker} -u {cas} -p {token}
+docker login {url_du_repo_docker} -u {user} -p {token}
 
 Pousser une image
 docker tag {nom_image} {url_du_repo_docker}/{{nom_dossier}}/{{nom_image}}
@@ -18,6 +18,9 @@ docker push {url_du_repo_docker}/{{nom_dossier}}/{{nom_image}}
 
 commande pour vider le cache :
 docker system prune -a
+
+commande pour builder sans utiliser le cache
+docker build --no-cache -t .
 
 commande pour lancer un container et rentrer dedans
 docker run -it {nom_du_container} bash
