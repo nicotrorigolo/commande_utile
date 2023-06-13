@@ -20,7 +20,7 @@ commande pour vider le cache :
 docker system prune -a
 
 commande pour builder sans utiliser le cache
-docker build --no-cache -t .
+docker build --no-cache -t {nom_image} .
 
 commande pour lancer un container et rentrer dedans
 docker run -it {nom_du_container} bash
