@@ -1,4 +1,4 @@
 Library python
 Convertir html en pdf : 
 pip install pdfkit \
-&& apt-get install wkhtmltopdf # paquet pour convertir le html en pdf
+&& apt-get install -y wkhtmltopdf # paquet pour convertir le html en pdf
