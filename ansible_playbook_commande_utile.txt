@@ -1,0 +1,4 @@
+Créer un dictionnaire vide
+- name: Initialiser le dictionnaire vide
+   set_fact:
+     dico_vide: "{{ dico_vide | default({})}}"
