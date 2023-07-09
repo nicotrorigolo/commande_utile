@@ -31,3 +31,5 @@ docker run -v ${WORKSPACE}:/robots -it {nom_du_container} bash
 commande pour lancer un container rentrer dedans et partager des fichiers et mettre des variables d'environnement dans le container
 docker run -v {chemin_dossier_en_local_a_partage}:{chemin_du_dossier_dans_le_container} -e {nom_de_la_variable}={valeur_de_la_variable} -it {nom_du_container} bash
 
+commande pour faire du docker in docker
+docker run -v /var/run/docker.sock:/var/run/docker.sock {nom_image}
