@@ -1,0 +1,2 @@
+Executer le tests avec l'ecran qui s'affiche:
+pytest --headed {fichier_de_tests}
