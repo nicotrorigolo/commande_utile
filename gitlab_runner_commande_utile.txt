@@ -1,0 +1,13 @@
+Creer un runner docker
+docker run --rm -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register \
+  --non-interactive \
+  --executor "docker" \
+  --docker-image {image_standard}:latest \
+  --url "https://gitlab.com/" \
+  --token "{token_fourni_par_gitlab}" \
+  --docker-volumes "/var/run/docker.sock:/var/run/docker.sock" \
+  --description "docker-runner"
+
+
+
+
