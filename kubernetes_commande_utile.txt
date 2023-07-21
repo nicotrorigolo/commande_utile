@@ -1,0 +1,11 @@
+Creer un cluster
+sudo kubeadm init --apiserver-advertise-address=11.0.0.11 --node-name $HOSTNAME
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Installer les pods de reseau du cluster avec Calico
+kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+
+Afficher tous les pod disponible
+kubectl get pods --all-namespaces
