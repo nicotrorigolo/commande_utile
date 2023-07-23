@@ -7,5 +7,14 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 Installer les pods de reseau du cluster avec Calico
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 
+Parametrer le taint
+kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+
 Afficher tous les pod disponible
 kubectl get pods --all-namespaces
+
+Afficher les pods sur un namespace precis
+kubectl get pods -n {nom_namespace}
+
+Afficher adresse ip des pods
+kubectl get pods -o wide
