@@ -1,0 +1,9 @@
+Convertir la reponse d'un GET en format manipulable par python
+################################################################################################
+import requests
+import json
+
+reponse_requete = requests.request("GET", url)
+reponse_manipulable_par_python = json.loads(reponse_requete.text)
+################################################################################################
+
