@@ -2,3 +2,14 @@ Créer un dictionnaire vide
 - name: Initialiser le dictionnaire vide
    set_fact:
      dico_vide: "{{ dico_vide | default({})}}"
+
+Utiliser des variable d'environnement
+- name: tests
+  become_user: ndf
+  hosts: localhost
+  vars:
+    koko: "{{ lookup('env', '{nom_variable_env)' }}"
+  tasks:
+    - name: lapin
+      ansible.builtin.debug:
+        msg: "{{ koko }}"
