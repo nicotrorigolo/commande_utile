@@ -1,0 +1,27 @@
+Passer d'un job simple a un job parralele avec le keyword "parallel"
+
+####################################################################################
+
+Job1:
+  stage: test
+  variables:
+    TYPE_TEST: lapin1
+  script:
+    - echo 1
+
+Job2:
+  stage: test
+  variables:
+    TYPE_TEST: lapin2
+  script:
+    - echo 2
+
+####################################################################################
+
+test-job - api:
+  stage: test
+  parallel:
+    matrix:
+      - TYPE_TEST: [lapin1, lapin2]
+  script:
+    - echo 3
