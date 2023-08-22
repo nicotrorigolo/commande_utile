@@ -32,3 +32,6 @@ test-job - api:
 
 La variable ${CI_PROJECT_DIR} est equivalent a
 /build/${CI_PROJECT_ROOT_NAMESPACE}/${CI_PROJECT_NAME}
+
+Pour ne pas faire de git pull et git checkout ajouter la variable
+GIT_STRATEGY: none
