@@ -5,3 +5,7 @@ git commit -m 'premier commit'
 git branch -M main
 git remote add origin https://{token_du_compte_github}@github.com/{identifiant_github}/{nom_du_repo}.git
 git push -u origin main
+
+Faire une merge de branche
+git checkout {branche_qui_va_accueillir_le_nouveau_code}
+git merge {branche_qui_va_envoyer_le_nouveau_code}
