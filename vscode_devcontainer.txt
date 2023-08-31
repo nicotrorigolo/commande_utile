@@ -1,0 +1,14 @@
+Pour utiliser le devcontainer, dans vscode installer les extensions suivantes
+Dev Containers
+
+Ouvrir le terminal de vscode (par défaut sur linux)
+ctrl + shift + p
+
+Créer un devcontainer
+Dev Containers: Add Dev Container Configuration Files...
+
+Re-ouvrir un devcontainer
+Dev Containers: Rebuild and Reopen in Container
+
+Re-ouvrir un devcontainer sans le cache
+Dev Containers: Rebuild Without Cache and Reopen in Container
