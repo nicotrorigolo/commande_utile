@@ -1,5 +1,8 @@
 Initialiser terraform dans a partir de rien
 terraform init
 
+Creer une variable d'environnement, a faire depuis un terminal
+export TF_VAR_{nom_variable}="{valeur_varible}"
+
 Appliquer les script terraform
 terraform apply
