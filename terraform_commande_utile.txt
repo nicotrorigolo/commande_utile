@@ -4,5 +4,8 @@ terraform init
 Creer une variable d'environnement, a faire depuis un terminal
 export TF_VAR_{nom_variable}="{valeur_varible}"
 
-Appliquer les script terraform
+Executer le script terraform
 terraform apply
+
+Executer le script terraform avec un fichie de variables
+terraform apply -var-file {nom_fichier_variables}.tfvars 
