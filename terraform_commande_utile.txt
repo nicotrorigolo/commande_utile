@@ -1,0 +1,5 @@
+Initialiser terraform dans a partir de rien
+terraform init
+
+Appliquer les script terraform
+terraform apply
