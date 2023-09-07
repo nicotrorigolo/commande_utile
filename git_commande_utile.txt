@@ -9,3 +9,9 @@ git push -u origin main
 Faire une merge de branche
 git checkout {branche_qui_va_accueillir_le_nouveau_code}
 git merge {branche_qui_va_envoyer_le_nouveau_code}
+
+Mettre en place les credentials de son repo git en local. (La derniere ligne va permettre d'enregistrer le mot de passe qui va être demandé lors d'une commande de "git push" ou "git pull")
+git config --local credential.username {username}
+git config --local user.email {eamil}
+git config --local credential.username {username}
+git config --local credential.helper store
