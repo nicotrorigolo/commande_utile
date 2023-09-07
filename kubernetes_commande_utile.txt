@@ -18,3 +18,6 @@ kubectl get pods -n {nom_namespace}
 
 Afficher adresse ip des pods
 kubectl get pods -o wide
+
+Acceder a un container d'un pod depuis l'exterieur du pod
+kubectl port-forward {nom_container} {port_ecoute_local}:{port_ecoute_container}  --address 0.0.0.0
