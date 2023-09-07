@@ -21,3 +21,6 @@ kubectl get pods -o wide
 
 Acceder a un container d'un pod depuis l'exterieur du pod
 kubectl port-forward {nom_container} {port_ecoute_local}:{port_ecoute_container}  --address 0.0.0.0
+
+Afficher les images présents dans les pods
+kubectl get replicaset -o wide
