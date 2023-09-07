@@ -1,3 +1,6 @@
 Créer une cle ssh
 ssh-keygen -q -t ecdsa -N '' -f /home/$USER/.ssh/id_ecdsa_local -b 521
 cat /home/$USER/.ssh/id_ecdsa_local.pub | tee /home/$USER/.ssh/authorized_keys
+
+Supprimer le fingerprint
+echo "StrictHostKeyChecking no" > ~/.ssh/config
