@@ -12,3 +12,6 @@ helm repo list
 
 Mettre a jour les repo disponible de helm
 helm repo update
+
+Installer l'application du repo local
+helm install {nom_application} --values value.yaml {nom_repo}
