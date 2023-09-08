@@ -28,5 +28,8 @@ kubectl get replicaset -o wide
 Afficher l'historique des rolling_update (il faut que le deploiement possede la strategy de type "RollingUpdate")
 kubectl rollout history {nom_deploiement}
 
-A partir de l'historique, revenir a une version precedente (il faut que le deploiement possede la strategy de type "RollingUpdate")
+A partir de l'historique, revenir a une version precedente bien precise (il faut que le deploiement possede la strategy de type "RollingUpdate")
 kubectl -- rollout undo {nom_deploiement} --to-revision {numero_revision}
+
+A partir de l'historique, revenir a la version precedente (il faut que le deploiement possede la strategy de type "RollingUpdate")
+kubectl -- rollout undo {nom_deploiement}
