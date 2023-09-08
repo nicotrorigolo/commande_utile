@@ -1,5 +1,5 @@
 Rechercher des repo disponible
-helm search hub {nom_repo}
+helm search hub --max-col-width 0 {nom_repo}
 
 Ajouter un repo sur son post en local
 helm repo add {nom_repo} {url}
