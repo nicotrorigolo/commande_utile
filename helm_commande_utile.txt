@@ -1,0 +1,5 @@
+Rechercher des repo disponible
+helm search hub {nom_repo}
+
+Ajouter un repo sur son post en local
+helm repo add {nom_repo} {url}
