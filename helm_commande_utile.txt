@@ -1,3 +1,6 @@
+Activer l'autocompletion
+source <(helm completion bash)
+
 Rechercher des repo disponible
 helm search hub --max-col-width 0 {nom_repo}
 
