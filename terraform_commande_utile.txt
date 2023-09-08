@@ -1,3 +1,6 @@
+Activer l'autocompletion (Il faut redemarrer le terminal apres avoir executer la commande)
+terraform -install-autocomplete
+
 Initialiser terraform dans a partir de rien
 terraform init
 
