@@ -1,3 +1,6 @@
+Activer l'autocompletion
+source <(kubectl completion bash)
+
 Creer un cluster
 sudo kubeadm init --apiserver-advertise-address=11.0.0.11 --node-name $HOSTNAME
 mkdir -p $HOME/.kube
