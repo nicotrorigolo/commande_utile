@@ -7,5 +7,8 @@ helm search hub --max-col-width 0 {nom_repo}
 Ajouter un repo sur son post en local
 helm repo add {nom_repo} {url}
 
+Afficher les repo locaux
+helm repo list
+
 Mettre a jour les repo disponible de helm
 helm repo update
