@@ -7,3 +7,5 @@ reponse_requete = requests.request("GET", url)
 reponse_manipulable_par_python = json.loads(reponse_requete.text)
 ################################################################################################
 
+Creer un serveur
+python -m http.server 5000
