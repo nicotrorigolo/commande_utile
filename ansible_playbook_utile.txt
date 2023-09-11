@@ -8,7 +8,7 @@ Utiliser des variable d'environnement
   become_user: ndf
   hosts: localhost
   vars:
-    koko: "{{ lookup('env', '{nom_variable_env)' }}"
+    koko: "{{ lookup('ansible.builtin.env', '{nom_variable_env)' }}"
   tasks:
     - name: lapin
       ansible.builtin.debug:
