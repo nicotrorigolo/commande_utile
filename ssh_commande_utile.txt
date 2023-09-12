@@ -1,3 +1,7 @@
+Changer le dossier ssh par defaut. (Modifier les lignes du fichier)
+nano /etc/ssh/ssh_config
+sudo systemctl restart sshd.service
+
 Créer une cle ssh
 ssh-keygen -q -t ecdsa -N '' -f /home/$USER/.ssh/id_ecdsa_local -b 521
 cat /home/$USER/.ssh/id_ecdsa_local.pub | tee /home/$USER/.ssh/authorized_keys
