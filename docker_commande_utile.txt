@@ -42,6 +42,7 @@ commande pour definir une adresse ip au container (mais il faut avant créer un 
 docker run --net {nom_network} --ip {adresse_ip} {nom_image}
   ex: docker run --net mon_network_que_g_cree --ip 172.21.0.10 mon_image_que_g_cree
 
-
+Deployer un container rapidement pour faire un tests
+docker run -d tutum/hello-world
 
 
