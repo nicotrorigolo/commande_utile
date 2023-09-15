@@ -36,3 +36,6 @@ kubectl -- rollout undo {nom_deploiement} --to-revision {numero_revision}
 
 A partir de l'historique, revenir a la version precedente (il faut que le deploiement possede la strategy de type "RollingUpdate")
 kubectl -- rollout undo {nom_deploiement}
+
+Ouvrir un bash dans un pod
+kubectl exec -it {nom_pod} -- bash
