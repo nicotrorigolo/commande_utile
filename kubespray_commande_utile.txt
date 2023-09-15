@@ -1,2 +1,5 @@
 Recuperer le certificat pour se connecter a l'apiserver du cluster
 ansible-playbook -i inventory/{nom_cluster}/inventory.yaml --become -e "ansible_sudo_pass={mot_de_passe}" -e "kubectl_localhost=true" -e "kubeconfig_localhost=true" -u {user} cluster.yml
+
+Reser le cluster sans le prompt
+ansible-playbook -i inventory/{nom_cluster}/inventory.yaml --become -e "ansible_sudo_pass={mot_de_passe}" -e "kubectl_localhost=true" -e "kubeconfig_localhost=true" -e "reset_confirmation=yes" -u {user} reset.yml
