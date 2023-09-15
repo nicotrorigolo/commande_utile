@@ -1,0 +1,6 @@
+Ajouter un node
+Sur le noeud Master, pour recuperer le token :
+  cat /var/lib/rancher/k3s/server/node-token
+Sur le noeud Worker, injecter le token :
+  curl -sfL https://get.k3s.io | K3S_URL=https://{ip_master}:6443 K3S_TOKEN={token_recuperer_sur_le_master] sh -
+
