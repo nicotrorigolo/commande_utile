@@ -18,3 +18,10 @@ helm install {nom_application} --values value.yaml {nom_repo}
 
 Appliquer les mises a jour apporter au repo
 helm upgrade {nom_repo} {chemin_dossier_contenant_Chart.yaml}
+
+Affecter les bonnes autorisation au fichier config
+sudo chmod 600 ~/.kube/config
+
+
+
+
