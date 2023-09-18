@@ -14,6 +14,9 @@ Mettre a jour les repo de chart helm local
 helm repo update
 
 Installer l'application du repo local
+helm install {nom_application} {nom_repo}/{nom_chart_helm}
+
+Installer l'application du repo local avec un fichier de config
 helm install {nom_application} --values value.yaml {nom_repo}
 
 Appliquer les mises a jour apporter au repo
