@@ -42,9 +42,8 @@ helm push {nom_chart_helm}.tgz {nom_projet}
 Pousser dans un repo gitlab de chart helm (il faut avoir installer le plugin de helm)
 helm cm-push {nom_chart_helm}.tgz {nom_projet}
 
-
-
-
+Afficher le fichier values du repo
+helm show values {nom_repo}/{nom_projet}
 
 
 
