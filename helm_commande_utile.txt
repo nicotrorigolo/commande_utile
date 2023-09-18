@@ -45,11 +45,14 @@ helm cm-push {nom_chart_helm}.tgz {nom_projet}
 Afficher le fichier values du repo
 helm show values {nom_repo}/{nom_projet}
 
+Afficher l'historique des release
+helm history {nom_application}
 
+Revenir a une ancienne release
+helm rollback {nom_application} {numero_release}
 
-
-
-
+Remettre l'application avec son fichier release par default
+helm upgrade {nom_application} {nom_repo}/{nom_projet} --reset-values
 
 
 
