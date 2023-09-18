@@ -4,9 +4,6 @@ source <(helm completion bash)
 Rechercher des repo disponible
 helm search hub --max-col-width 0 {nom_repo}
 
-Ajouter un repo sur son post en local
-helm repo add {nom_repo} {url}
-
 Afficher les repo locaux
 helm repo list
 
@@ -34,10 +31,10 @@ helm package {chemin_chart_helm} --destination {chemin_fichier_sortie}
 Se connecter au registry des chart helm
 helm registry login {nom_registry} -u {user} -p {mot_de_passe_ou_token}
 
-Créer un repo de chart helm (il faut avoir un repo deja crée)
-helm repo add --username {user} --password {mot_de_passe_ou_token} {nom_projet} {url_repo}
+Ajouter/Créer un repo de chart helm (il faut avoir un repo deja crée)
+helm repo add --username {user} --password {mot_de_passe_ou_token} {nom_repo} {url_repo}
   Exemple sur gitlab
-  helm repo add --username {user} --password {mot_de_passe_ou_token} {nom_projet} https://gitlab.com/api/v4/projects/{id_projet}/packages/helm/{channel}
+  helm repo add --username {user} --password {mot_de_passe_ou_token} {nom_repo} https://gitlab.com/api/v4/projects/{id_projet}/packages/helm/{channel}
 
 Pousser dans un repo de chart helm
 helm push {nom_chart_helm}.tgz {nom_projet}
