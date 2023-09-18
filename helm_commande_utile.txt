@@ -10,7 +10,7 @@ helm repo add {nom_repo} {url}
 Afficher les repo locaux
 helm repo list
 
-Mettre a jour les repo disponible de helm
+Mettre a jour les repo de chart helm local
 helm repo update
 
 Installer l'application du repo local
