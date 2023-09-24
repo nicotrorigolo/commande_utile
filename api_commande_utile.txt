@@ -1,0 +1,4 @@
+Une url qui ressembla a ça :
+https://pokeapi.co/api/v2/pokeball?pokemon=pikachu
+Est une url qui demande a besoin de parametre. Les parametre de l'url sont :
+?pokemon=pikachu
