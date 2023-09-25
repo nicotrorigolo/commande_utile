@@ -37,13 +37,13 @@ helm repo add --username {user} --password {mot_de_passe_ou_token} {nom_repo} {u
   helm repo add --username {user} --password {mot_de_passe_ou_token} {nom_repo} https://gitlab.com/api/v4/projects/{id_projet}/packages/helm/{channel}
 
 Pousser dans un repo de chart helm
-helm push {nom_chart_helm}.tgz {nom_projet}
+helm push {nom_chart_helm}.tgz {nom_repo}
 
 Pousser dans un repo gitlab de chart helm (il faut avoir installer le plugin de helm)
-helm cm-push {nom_chart_helm}.tgz {nom_projet}
+helm cm-push {nom_chart_helm}.tgz {nom_repo}
 
 Afficher le fichier values du repo
-helm show values {nom_repo}/{nom_projet}
+helm show values {nom_repo}/{nom_application}
 
 Afficher l'historique des release
 helm history {nom_application}
