@@ -11,10 +11,13 @@ Mettre a jour les repo de chart helm local
 helm repo update
 
 Installer l'application du repo local
-helm install {nom_application} {nom_repo}/{nom_chart_helm}
+helm install {nom_application} {nom_repo}/{nom_application}
 
 Installer l'application du repo local avec un fichier de config
 helm install {nom_application} --values value.yaml {nom_repo}
+
+Installer l'application du repo local avec un fichier de config dans un namespace specifique
+helm install {nom_application} --values value.yaml {nom_repo} --create-namespace --namespace {nom_namespace}
 
 Appliquer les mises a jour apporter au repo
 helm upgrade {nom_repo} {chemin_dossier_contenant_Chart.yaml}
