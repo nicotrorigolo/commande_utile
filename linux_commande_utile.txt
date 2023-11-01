@@ -1,0 +1,2 @@
+Afficher l'espace consommé de chacune des repertoires
+sudo du -hx -d 1 /
