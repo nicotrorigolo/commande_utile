@@ -9,3 +9,12 @@ reponse_manipulable_par_python = json.loads(reponse_requete.text)
 
 Creer un serveur
 python -m http.server 5000
+
+Utiliser variable d'environnement
+
+path = os.environ["PATH"]
+################################################################################################
+import os
+
+path = os.environ["PATH"]
+################################################################################################
