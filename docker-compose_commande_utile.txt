@@ -4,7 +4,9 @@ docker-compose -f docker-compose.yaml -f docker-compose.tests.yaml up
 Mettre fin a l'execution du docker-compose lorsque qu'un conteneur est s'éteint
 docker-compose up --exit-code-from {nom_service}
 
+#############################################################################################################
 Exemple de docker compose permettant d'executer deux commandes ou plusieurs commande
+#############################################################################################################
 version: '3.8'
 services:
   squash:
@@ -19,3 +21,5 @@ services:
       - |
         echo Salut ! :D
         echo Comment ça va ?
+
+ #############################################################################################################
