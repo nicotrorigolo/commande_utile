@@ -15,3 +15,9 @@ git config --local credential.username {username}
 git config --local user.email {eamil}
 git config --local credential.username {username}
 git config --local credential.helper store
+
+Créer un tag
+git tag -a {nom_tag} -m "{message_tag}"
+
+Pousser le tag dans le repo
+git push {nom_branche} {nom_tag}
