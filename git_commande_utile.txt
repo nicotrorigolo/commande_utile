@@ -22,6 +22,9 @@ git tag -a {nom_tag} -m "{message_tag}"
 Pousser le tag dans le repo
 git push {nom_branche} {nom_tag}
 
+Pousser tous les tags
+git push --tags
+
 Supprimer un tag
 git tag -d {nom_branche} {nom_tag}
 
